@@ -1,0 +1,57 @@
+
+.exponentMain{
+  @border:#ff9468;
+
+  height:100%;
+  overflow:auto;
+
+  //业态list头
+  .shopTypeHeader{
+    height:5rem;
+    line-height: 5rem;
+    border-top: 0.1rem solid @border;
+    border-bottom: 0.1rem solid @border;
+    font-size: 1.4rem;
+    color: #ffffff;
+    padding:0 1rem;
+    box-sizing: border-box;
+
+    //图标
+    .typeIcon{
+      width:3rem;
+      height:3rem;
+      border-radius:50%;
+      background: #ffb342;
+      float: left;
+      margin-top: 1rem;
+      box-sizing: border-box;
+
+      img{
+        width:2rem;
+        height:2rem;
+        transform: translate(0.5rem,-0.5rem);
+      }
+    }
+
+    span{
+      display: inline-block;
+    }
+    .category{
+      margin:0 1rem;
+    }
+
+    .price{
+      float: right;
+
+      .img{
+        width:0.7rem;
+        height:1.3rem;
+        margin:-0.2rem 0 -0.2rem 0.5rem;
+        background-image: url("../../../img/forward.png");
+        background-size: cover;
+        display: inline-block;
+      }
+    }
+
+  }
+}

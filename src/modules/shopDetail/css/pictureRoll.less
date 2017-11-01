@@ -1,0 +1,53 @@
+
+.pictureRoll{
+  padding:1.5rem 1rem;
+  border-top: 0.1rem solid #f2f2f2;
+  font-size: 1.6rem;
+
+  .pictureContainer{
+    margin-top: 1.5rem;
+    white-space:nowrap;
+    overflow:auto;
+
+    div{
+      width:8rem;
+      height: 8rem;
+      display: inline-block;
+      margin-right: 0.5rem;
+      position: relative;
+      overflow: hidden;
+
+      img{
+        width:8rem;
+        height: 8rem;
+        background-color: #ccc;
+      }
+
+      p{
+        display: inline-block;
+        width:2rem;
+        height: 2rem;
+        position: absolute;
+        top:0;
+        right:0;
+        background: #000;
+      }
+      //消费过标签
+      span{
+        height: 1.5rem;
+        line-height: 1.6rem;
+        text-align: center;
+        width: 6rem;
+        position: absolute;
+        top:0.9rem;
+        right:-1.5rem;
+        z-index: 10;
+        background-color:#fc6121;
+        color: #FFFFFF;
+        font-size: 0.9rem;
+        transform: rotate(45deg);
+
+      }
+    }
+  }
+}

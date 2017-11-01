@@ -1,0 +1,206 @@
+.billDetailInfo {
+  position: absolute;
+  width: 100%;
+  background-color: #f2f2f2;
+  top:0;
+  bottom: 48px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .center {
+    text-align: center;
+  }
+  .fontColor(@white:#FFFFFF) {
+    color: @white;
+  }
+  .fontStyle(@siz:16px) {
+    font-family: 'PingFangSC-Regular';
+    font-size: @siz;
+  }
+  .billTitle {
+    background-color: #ffffff;
+    width: 375px;
+    height: 157px;
+    overflow: hidden;
+    background-image: url('../../../../img/billTitle.png');
+    background-size: 375px 157px;
+    background-position: center;
+    .center;
+    .fontColor;
+    p {
+      padding-top: 15px;
+      .fontStyle;
+    }
+    h2 {
+      padding-top: 21px;
+      .fontStyle(24px);
+      margin: 0;
+    }
+    div{
+      padding-top: 20px;
+      .fontStyle(14px);
+
+    }
+  }
+  .row_one {
+    padding-top: 10px;
+    background-color: #ffffff;
+  }
+  .am-card {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    margin: 0 0 0 10px;
+    padding-bottom: 0;
+    .am-card-header {
+      font-family: 'PingFangSC-Regular';
+      font-size: 14px;
+      padding: 18px 0;
+      margin-left: 0;
+      position: relative;
+      border-bottom: 1px dashed #cccccc;
+      .am-card-header-content {
+        color: #333333;
+      }
+      .am-card-header-extra {
+        font-family: 'PingFang-SC-Semibold';
+        font-size: 18px;
+        color: #333333;
+        padding-right: 10px;
+      }
+
+    }
+    .cardDiv {
+      padding-bottom: 10px;
+      .am-card-footer {
+        font-family: 'PingFangSC-Regular';
+        font-size: 12px;
+        color: #333333;
+        margin: 1.3rem 0;
+        padding: 0;
+        .am-card-footer-content {
+
+        }
+        .am-card-footer-extra {
+          padding-right: 10px;
+          display: block;
+          word-break: break-all;
+          flex: 3;
+          -webkit-box-flex: 3;
+        }
+      }
+    }
+
+  }
+
+  .am-card-footer-content {
+    -webkit-box-flex: 1.5;
+    -ms-flex: 1.5;
+    flex: 1.5;
+  }
+
+  .last{
+    .code{
+      color: #000000;
+      padding-top: 5px;
+      .center;
+      .fontStyle(12px);
+      span{
+        padding-left: 20px;
+        letter-spacing:4px;
+      }
+    }
+    .text{
+      .fontStyle(12px);
+      color: #999999;
+      .center;
+      line-height: 18px;
+      padding: 25px 0;
+
+      span{
+        margin:0 0 15px  0;
+        display: block;
+      }
+      label{
+        margin-bottom: 15px;
+        color: red;
+        display: block;
+      }
+    }
+  }
+  .codeBar{
+    width: 200px;
+    height: 65px;
+    .center;
+    margin: auto;
+    display: block;
+  }
+  .row_two{
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding-bottom: 46px;
+  }
+  .row_thr{
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding-bottom: 6px;
+    padding-top: 10px;
+    //margin-bottom: 58px;
+
+    .am-card-header-extra{
+      font-size: 14px !important;
+    }
+    .cardFooter{
+      border-top: 1px solid #f2f2f2;
+      padding: 10px 0;
+      .am-card-footer {
+        font-family: 'PingFangHK-Regular';
+        font-size: 1.2rem;
+        color: #333333;
+        margin: 13px 0;
+        padding: 0;
+        .am-card-footer-extra {
+          padding-right: 10px;
+          flex:3;
+          -webkit-box-flex: 3;
+        }
+        .goodsList span:nth-child(1) {
+          color: #999999;
+          padding-right: 10px;
+        }
+        .goodsList span:nth-child(2) {
+          color: #999999;
+          padding-right: 10px;
+          text-decoration: line-through;
+        }
+      }
+    }
+
+  }
+
+  .footer{
+    position: fixed;
+    bottom: 0;
+    height: 48px;
+    width: 100%;
+    background: #FFFFFF;
+    border-top: 1px solid #f2f2f2;
+    span:last-child{
+      background: #FF7739;
+      border-radius: 3px;
+      width:147px;
+      height: 32px;
+      float: right;
+      margin:8px 10px;
+      text-align: center;
+      color: #ffffff;
+      line-height: 32px;
+    }
+    span:first-child{
+      font-family: 'PingFang-SC-Medium';
+      font-size: 14px;
+      color: #FF7739;
+      margin:14px 10px;
+      text-decoration: underline;
+      line-height: 48px;
+    }
+  }
+}

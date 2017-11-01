@@ -1,0 +1,103 @@
+
+.commentContainer{
+  @color3:#333333;
+  @bdcolor:#f2f2f2;
+
+  .am-accordion{
+    border-top:none;
+
+    .am-accordion-item{
+      padding:0;
+      //transform: translateY(-1rem);
+
+      //头
+      .am-accordion-header{
+        width: 100%;
+        height:4.8rem;
+        line-height:4.8rem;
+        border-top: 0.1rem solid @bdcolor;
+        font-size: 1.6rem;
+        color: @color3;
+        padding:0 1rem 0 0 ;
+        box-sizing: border-box;
+
+        i{
+          top:1.5rem;
+          height:2rem;
+          width: 3rem;
+        }
+
+        &:after{
+          border:none;
+        }
+      }
+
+      // 内容
+      .am-accordion-content{
+        color: @color3;
+        .am-accordion-content-box {
+
+          &:after {
+            border: none;
+          }
+        }
+
+        //评价
+        .comment{
+          border-top:0.1rem solid @bdcolor;
+          padding:1.5rem 1rem 1.5rem 0;
+          font-size:1.2rem;
+          position: relative;
+
+          //头像
+          .userIcon{
+            width:3.6rem;
+            height:3.6rem;
+            border: none;
+            border-radius: 50%;
+            background: #ccc;
+            float: left;
+          }
+
+          //手机号
+          .phone{
+            margin-left:1rem;
+            margin-bottom: 1rem;
+          }
+
+          //电话
+          .time{
+            float: right;
+            color: #999999;
+          }
+
+          //评星
+          .rateShow{
+            position:absolute;
+            top:3.5rem;
+            left:4.7rem;
+          }
+          //评价
+          p{
+            padding-left:4.6rem;
+            clear: both;
+            padding-top:1.5rem;
+            line-height: 1.5rem;
+            height: 3rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+
+        //查看全部
+        .loadAll{
+          font-size: 1.4rem;
+          height: 5rem;
+          line-height:5rem;
+          text-align: center;
+          border-top: 0.1rem solid @bdcolor;
+        }
+      }
+    }
+  }
+}

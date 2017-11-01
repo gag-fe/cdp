@@ -1,0 +1,102 @@
+.couponDiv {
+  margin: 1rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+  .coupon_text {
+    overflow: hidden;
+    line-height: 8.5rem;
+    .coupon_left {
+      width: 70%;
+      border-right: 0.1rem dashed #ffffff;
+      float: left;
+      padding-left: 2.2rem;
+      box-sizing: border-box;
+
+      .coupon_leftMidel {
+        display: inline-block;
+        line-height: 1.8rem;
+        vertical-align: middle;
+        width: 100%;
+
+        h3 {
+          font-size: 1.6rem;
+          font-family: 'PingFangHK-Medium';
+          color: #FFFFFF;
+          margin: 0;
+          padding:0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+
+        }
+
+        p, span {
+          font-family: 'PingFangHK-Regular';
+          font-size: 1.2rem;
+          color: #FFFFFF;
+        }
+
+      }
+    }
+    .coupon_right {
+      width: 30%;
+      float: right;
+      position: relative;
+      box-sizing: border-box;
+      padding-right:1rem;
+
+      img.pic_used{
+        display: block;width: 6rem;height: 6rem;position: absolute;
+        left:50%;
+        margin: auto;
+        top:50%;margin-top: -3rem;
+        z-index: 9;
+        margin-left: -3.4rem;
+      }
+      .used_name{
+        transform: rotate(-315deg);
+        font-family: 'PingFangHK-Regular';
+        font-size: 1rem;
+        color: #FFFFFF;
+        position: absolute;
+        top:-2.6rem;
+        right:0
+      }
+      .coupon_rightMidel {
+        display: inline-block;
+        line-height: 2rem;
+        vertical-align: middle;
+        text-align: center;
+        width: 100%;
+
+        p {
+          font-family: 'PingFangHK-Regular';
+          font-size: 1.2rem;
+          color: #FFFFFF;
+
+          span {
+            font-family: 'Impact';
+            font-size: 4rem;
+          }
+        }
+        label {
+          font-family: 'PingFangHK-Regular';
+          font-size: 1.2rem;
+          color: #FFFFFF;
+          display: block;
+          margin-top: 0.2rem;
+        }
+
+      }
+
+    }
+
+  }
+
+}

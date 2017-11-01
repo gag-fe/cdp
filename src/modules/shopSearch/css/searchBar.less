@@ -1,0 +1,92 @@
+
+.shopSearchPage{
+
+  @bgcolor:#f2f2f2;
+
+  width:100%;
+  height:5rem;
+  font-size:1.5rem;
+  padding:0.75rem 0.5rem 0.75rem 1rem;
+  box-sizing: border-box;
+  position: relative;
+
+  .am-list-item{
+    width:87%;
+    min-height:35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 0.2rem;
+    background-color: @bgcolor;
+    padding-left: 0;
+    .am-input-control{
+      background-color: @bgcolor;
+      width:91%;
+
+      input{
+        border:none;
+        width:100%;
+        height: 2rem;
+        line-height: 2rem;
+        font-size:1.5rem;
+        color: #333333;
+        background-color:@bgcolor;
+        margin:0;
+        padding:0;
+      }
+    }
+
+    .imgSearch{
+      display: inline-block;
+      float: left;
+      height:1.5rem;
+      width:1.5rem;
+      margin-left:20px;
+      margin-right: 0.5rem;
+      background-image: url("../../../img/search@2x.png");
+      background-size: cover;
+      border: none;
+    }
+
+    //清楚按钮
+    .am-input-clear{
+      height:3rem;
+      width:3rem;
+      border-radius: 50%;
+      background-image: url("../../../img/cancel.png");
+      background-repeat: no-repeat;
+      background-size: 2rem auto;
+      background-position: 0rem 0.5rem;
+    }
+  }
+
+  span{
+    float: right;
+    width:11%;
+    text-align: center;
+    margin-top:-25px;
+  }
+
+  //联想
+  .searchAssociate{
+    position: absolute;
+    top:4.3rem;
+    left:1rem;
+    //border:0.1rem solid #cccccc;
+    width: 83.7%;
+    z-index: 10000;
+    background-color: #ffffff;
+    color: #333333;
+    max-height: 15rem;
+    overflow: auto;
+
+    p{
+      line-height: 3rem;
+      height:3rem;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    p:first-child{
+      border-top:none;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+//单品
+.dishContainer{
+  display: inline-block;
+  margin-top:1.5rem;
+  margin-right: 0.4rem;
+  position: relative;
+
+  //图片
+  .dish{
+    width:22.5vw;
+    height:22.5vw;
+  }
+
+  //选择图标
+  .select{
+    width:2rem;
+    height:2rem;
+    position: absolute;
+    top:0.5rem;
+    right:0.5rem;
+    background-image: url("../../../img/select.png");
+    background-size: cover;
+  }
+  .selected{
+    width:2rem;
+    height:2rem;
+    position: absolute;
+    top:0.5rem;
+    right:0.5rem;
+    background-image: url("../../../img/selected.png");
+    background-size: cover;
+  }
+
+  //名字
+  &>p:first-of-type{
+    margin:1rem 0;
+    max-width: 22.5vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  //价格
+  &>p:nth-of-type(2){
+    color: #FC6121;
+  }
+}

@@ -1,0 +1,101 @@
+.unInvoiceBill {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  //position: absolute;
+  margin-bottom: 50px;
+  .am-list{
+    margin-bottom: 10px;
+
+    .am-list-body:after {
+      border-bottom: 1px solid #f2f2f2;
+    }
+
+    .am-list-body {
+      border-top: 0 ;
+
+      .am-list-item {
+        min-height: 72px;
+        padding-left: 10px;
+        border-bottom: 1px solid #f2f2f2;
+        .am-list-thumb:first-child {
+          margin-right: 10px;
+
+        }
+        img {
+          width: 28px;
+          height: 28px;
+          border-top-left-radius: 50%;
+          border-top-right-radius: 50%;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+        }
+        .am-list-line:after{
+          border-bottom: 0;
+        }
+        .am-list-line {
+          padding-right: 10px;
+          outline: none;
+          min-height: 72px;
+          .am-list-content {
+            text-align: left;
+            font-family: 'PingFangSC-Regular';
+            font-size: 14px;
+            color: #333333;
+            line-height: 0.2;
+            padding-top: 26px;
+
+            .am-list-brief{
+              font-family: 'PingFangSC-Regular';
+              font-size: 12px;
+              color: #999999;
+            }
+
+
+          }
+
+
+          .am-list-extra{
+            font-family: 'PingFangSC-Regular';
+            font-size: 14px;
+            color: #333333;
+            padding-top:26px;
+          }
+        }
+      }
+      .billDetaillItem{
+        min-height:60px;
+        .am-list-line{
+          min-height: 60px !important;
+          .am-list-content{
+            padding-top:15px;
+          }
+          .am-list-extra{
+            padding-top:15px;
+          }
+        }
+      }
+    }
+
+  }
+  .unselect {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../../../img/select.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    top: 25px;
+    right: 10px;
+    display: block;
+    position: absolute;
+  }
+
+  .selected{
+    background-image: url(../../../../img/selected.png);
+  }
+}
+
+
+
+
+

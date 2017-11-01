@@ -1,0 +1,146 @@
+
+.couponContainer{
+  @bdcolor:#f2f2f2;
+  @bgcolor:#fc6121;
+
+  .am-accordion{
+    border-top:none;
+
+    .am-accordion-item{
+      padding:0;
+      //transform: translateY(-1rem);
+
+      //头
+      .am-accordion-header{
+        width: 100%;
+        height:4.8rem;
+        line-height:4.8rem;
+        border-top: 0.1rem solid @bdcolor;
+        font-size: 1.6rem;
+        color: #333333;
+        padding:0 1rem;
+        box-sizing: border-box;
+
+        //标签 折
+        .tag{
+          display: inline-block;
+          background: red;
+          color: #ffffff;
+          width:1.8rem;
+          height:1.8rem;
+          line-height:1.8rem;
+          border-radius:0.2rem;
+          text-align: center;
+          margin-right:0.5rem;
+          font-size: 1.4rem;
+        }
+
+        i{
+          top:1.5rem;
+          height:2rem;
+          width: 3rem;
+        }
+
+        &:after{
+          border:none;
+        }
+      }
+
+      // 内容
+      .am-accordion-content{
+        //border-bottom:0.1rem solid red;
+        padding:1.5rem 1rem;
+        color: #666666;
+        .am-accordion-content-box{
+          font-size: 1.2rem;
+
+          &:after{
+            border:none;
+          }
+
+          //优惠券
+          .coupon{
+            margin-top: 1.5rem;
+            width:12rem;
+            height:8rem;
+            font-size: 0.5rem;
+            color: #ffffff;
+            position: relative;
+            background-color: @bgcolor;
+
+            //左侧介绍
+            .describe{
+              font-size: 0.8rem;
+
+              p{
+                text-indent: 1rem;
+              }
+              p:first-child{
+                padding-top: 1rem;
+                //border:1px solid red;
+                font-size:1.5rem;
+                font-family:AdobeHeitiStd-Regular;
+
+                span{
+                  font-size:2.7rem;
+                  font-family:Impact;
+                }
+              }
+              p:nth-child(2){
+                margin:0.5rem 0;
+              }
+
+            }
+
+            //立即领取
+            div:nth-child(3){
+              width: 4rem;
+              height: 8rem;
+              position: absolute;
+              top:0;
+              right:0;
+              font-size: 1rem;
+              background-color: #f3482a;
+              box-sizing: border-box;
+              padding:1.8rem 1.5rem;
+              z-index: 10;
+            }
+          }
+
+          .jag {
+            width: 100%;
+            height: 0.5rem;
+            background-image: -webkit-gradient(
+            linear, //表示渐变的为直线 另外一个值是radial
+            50% 0, //直线型渐变的起点位置 后边有一个属性background-size规定背景的大小，30 X 15px  50% 0 都是乘以父元素的宽高。
+            0 100%, //结束点的位置 和上类似
+            from(transparent), //起点的颜色
+            color-stop(.5, transparent), //中间某一个点必须达到这个颜色，表示变化过程  .5b表示这个渐变范围长度的总长的50%
+            color-stop(.5, @bgcolor), //同上
+            to(@bgcolor)), //结束段的颜色
+
+            -webkit-gradient(linear, 50% 0, 100% 100%, from(transparent),
+            color-stop(.5, transparent),
+            color-stop(.5, @bgcolor),
+            to(@bgcolor));
+            background-size: 0.8rem 0.5rem;
+            background-repeat: repeat-x;
+            background-position: 0 100%;
+          }
+          .jag-top{
+            position: absolute;
+            top:-0.3rem;
+            left:0;
+          }
+          .jag-bottom{
+            position: absolute;
+            bottom:-0.3rem;
+            left:0;
+            transform: rotate(180deg);
+          }
+
+        }
+      }
+    }
+  }
+}

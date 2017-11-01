@@ -1,0 +1,123 @@
+
+//模态框
+.am-modal-mask{
+  opacity: 0;
+}
+
+.am-modal {
+  width: 100%!important;
+  height: 100%!important;
+
+  .am-modal-content{
+    height: 100%!important;
+    padding:0 !important;
+    background: rgba(0,0,0,0.5);
+    overflow: auto;
+
+    .am-modal-close{
+      font-size: 0;
+    }
+  }
+}
+
+//弹出内容
+.recommendModal{
+  width:100%;
+  font-size:1.2rem;
+  color: #ffffff;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: 10;
+  padding:0 2rem;
+
+  //店铺信息
+  header{
+    padding-bottom:2rem;
+    p{
+      font-size:1.6rem;
+      margin:0;
+      padding:2.5rem 0 1.5rem 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .singlePrice{
+      display: inline-block;
+      padding-left:1.5rem;
+    }
+  }
+
+  //评论
+  .commentContainer{
+    color: #FFFFFF;
+    text-align: left;
+  }
+
+  //推荐单品
+  .shareMain{
+    padding:2rem 0 5rem 0;
+    text-align: left;
+
+    p{
+      font-size:1.5rem;
+    }
+
+    div{
+      display: inline-block;
+      margin-top:1.5rem;
+      margin-right: 0.4rem;
+
+      img{
+        width:20.5vw;
+        height:20.5vw;
+      }
+
+      p{
+        text-align: left;
+        width:20.5vw;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      &>p:nth-child(2){
+        margin:1rem 0;
+      }
+    }
+
+    //没一row最右侧单个
+    div:nth-child(5){
+      margin-right:0;
+    }
+    div:nth-child(9){
+      margin-right:0;
+    }
+  }
+
+  //关闭
+  .cancel{
+    width:3.5rem;
+    height:3.5rem;
+    margin-bottom:1rem;
+    background-image: url("../../../img/cancelX.png");
+    background-size: cover;
+    display: inline-block;
+  }
+}
+
+//背景模糊
+.bgBlur{
+  width:100%;
+  height:100%;
+  //filter: blur(1rem);
+  //opacity: 0.9;
+  background-color: #000000;
+  //background-image: url("/src/img/commend-bg.png");
+  background-size: cover;
+}
+
+.recommendModalbg{
+  background-image: url("../../../img/commend-bg.jpg");
+}

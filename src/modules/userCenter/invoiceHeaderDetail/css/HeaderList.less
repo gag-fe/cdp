@@ -1,0 +1,137 @@
+.headerList{
+
+  .am-list-body:after{
+    border-bottom: 0;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #999 !important;
+    font-size: 1.4rem !important;
+  }
+
+  input:-moz-placeholder {
+    color: #999 !important;
+    font-size: 1.4rem !important;
+  }
+
+  input::-moz-placeholder {
+    color: #999 !important;
+    font-size: 1.4rem !important;
+  }
+
+  input:-ms-input-placeholder {
+    color: #999 !important;
+    font-size: 1.4rem !important;
+  }
+  .am-list {
+    .am-list-item{
+      .am-input-label.am-input-label-4{
+        width: auto;
+      }
+
+      .am-input-label{
+        font-family: 'PingFangHK-Regulr';
+        font-size: 1.4rem;
+        color: #333;
+        font-weight: normal;
+      }
+      .am-input-control{
+        font-size: 1.4rem;
+        input{
+          font-family: 'PingFangHK-Regulr';
+          font-size: 1.4rem;
+          color: #666;
+          text-align:right;
+          line-height: normal;
+        }
+
+      }
+    }
+    .am-list-item.am-input-item{
+      min-height: 55px;
+      height:55px;
+      padding-right: 1rem;
+      margin-left: 1rem;
+      padding-left: 0;
+    }
+    .am-list-item.am-input-item:after{
+      left:0
+    }
+    .am-list-item.am-checkbox-item{
+      min-height: 30px;
+      padding-right: 1rem;
+      margin-left: 1rem;
+      padding-left: 0;
+
+      .am-list-thumb{
+        width:20px;
+        height:20px;
+        margin-right: 10px;
+        .am-checkbox-inner{
+          width:20px;
+          height:20px;
+          left:0;
+          top:13px;
+        }
+
+        .am-checkbox{
+          height:35px;
+        }
+
+      }
+
+      .am-list-line:after{
+        border-bottom: 0;
+      }
+      .am-list-content{
+        font-family: 'PingFangHK-Regulr';
+        font-size: 1.4rem;
+        color: #333;
+        font-weight: normal;
+      }
+    }
+    .am-list-item.am-list-item-middle .am-list-line{
+      min-height: 30px;
+    }
+    .am-checkbox .am-checkbox-inner{
+      border: 0.2rem solid #888;
+    }
+    .am-checkbox.am-checkbox-checked .am-checkbox-inner{
+      border: 0.2rem solid #FC6121;
+    }
+    .am-checkbox-inner:after{
+      width: 0.6rem;
+      height: 1.2rem;
+      top: 0rem;
+      right: 0.4rem;
+      border-color: #FC6121;
+      border-style: solid;
+      border-width: 0 0.2rem 0.2rem 0;
+      transform:rotate(45deg);
+      -ms-transform:rotate(45deg); 	/* IE 9 */
+      -moz-transform:rotate(45deg); 	/* Firefox */
+      -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+      -o-transform:rotate(45deg); 	/* Opera */
+    }
+  }
+  .am-list-item.am-checkbox-item:nth-child(3){
+    margin-top: -0.5rem;
+    border-bottom: 0.1rem solid #dddddd;
+  }
+
+  /*开发票联想搜索*/
+  .append {
+    overflow: hidden;
+    .item {
+      cursor: pointer;
+      border-bottom: 0.1rem solid #eaeaea;
+      height: 3.5rem;
+      line-height: 3.5rem;
+      margin-left: 1rem;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

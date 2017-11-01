@@ -1,0 +1,77 @@
+//单品
+.dishViewContainer{
+  display: inline-block;
+  margin-right: 0.4rem;
+
+  .pictureContainer{
+    position: relative;
+
+    //菜品图片
+    .dish{
+      width:22.5vw;
+      height:22.5vw;
+    }
+
+    //推荐图标&次数
+    .commend{
+      width:3rem;
+      height:1.8rem;
+      text-align: center;
+      position: absolute;
+      top:0;
+      left:0;
+      background: #FF302A;
+      box-sizing: border-box;
+      padding-top:0.3rem;
+      font-size: 0.9rem;
+      color: #ffffff;
+
+      img{
+        display: inline-block;
+        width:0.8rem;
+        height:1rem;
+      }
+    }
+
+    //消费次数
+    .consumeCount{
+      width:6rem;
+      height:1.8rem;
+      line-height: 1.8rem;
+      text-align: center;
+      position: absolute;
+      bottom:0;
+      left:0;
+      background:#FFFFFF 90%;
+      box-sizing: border-box;
+      border: 0.1rem solid #FF302A;
+      font-size: 1rem;
+      color: #FF302A;
+    }
+  }
+
+
+  p{
+    font-size: 1.2rem;
+    max-width: 22.5vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  //名字
+  &>p:first-of-type{
+    margin-top:1rem;
+    margin-bottom: 0;
+  }
+
+  //价格
+  &>p:nth-of-type(2){
+    color: #FC6121;
+
+    span{
+      font-size: 0.9rem;
+    }
+  }
+}
+

@@ -1,0 +1,115 @@
+.singleContainer{
+  width:30rem;
+  margin:0 auto;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 0.4rem;
+  //position: relative;
+  box-sizing: border-box;
+  margin-top:80px;
+
+  //取消按钮
+  .close{
+    width:28px;
+    height:28px;
+    position: absolute;
+    background-image: url("../../../img/cancelX.png");
+    background-size: cover;
+    right: 0;
+    top: 38px;
+  }
+  .border{
+    border-right:0.1rem solid #dddddd;
+    height:1.2rem;
+    clear: both;
+    position: absolute;
+    top:66px;
+    right:14px;
+  }
+
+  //图片
+  .dish{
+    width:30rem;
+    height:30rem;
+    background-color: #cccccc;
+    border-radius-topleft: 0.4rem;
+    border-radius-topright: 0.4rem;
+    margin: 0;
+  }
+
+  //收藏切换
+  .attention{
+    width:2.7rem;
+    height:2.7rem;
+    position: absolute;
+    bottom:14rem;
+    right:1rem;
+    background-image: url("../../../img/attention.png");
+    background-size: cover;
+  }
+  .onAttention{
+    width:2.7rem;
+    height:2.7rem;
+    position: absolute;
+    bottom:14rem;
+    right:1rem;
+    background-image: url("../../../img/onAttention.png");
+    background-size: cover;
+  }
+
+  //文字
+  .textContainer{
+    background-color: #FFFFFF;
+    transform: translateY(-0.3rem);
+    text-align: left;
+    padding:0 1rem;
+    box-sizing: border-box;
+    width: 100%;
+
+    //菜名
+    .name{
+      font-size:1.8rem;
+      color: #333333;
+      padding-top: 1.5rem;
+      max-width: 15rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .describe{
+      margin-top:1rem;
+      color: #666666;
+      font-size: 1.2rem;
+      height: 3rem;
+      line-height: 1.5rem;
+      padding-right:1rem;
+      overflow: hidden;
+    }
+
+    //价格
+    .price{
+      font-size:1.6rem;
+      color: #fc6121;
+      padding-bottom: 1rem;
+      padding-top: 1.5rem;
+
+      span:first-child{
+        font-size: 1.1rem;
+      }
+      p{
+        text-decoration: line-through;
+        color: #999999;
+        display: inline-block;
+        margin:0 0 0  0.5rem;
+
+        span:nth-child(1){
+          font-size: 0.9rem;
+        }
+        span:nth-child(2){
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+  }
+}
